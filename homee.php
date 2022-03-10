@@ -25,9 +25,13 @@
         }
         nav{
             background-color:black;
-            height:9vh;
+            height:10vh;
+            transition:1s;
             /* position: fixed; */
         }
+        /* nav:hover{
+            background-color: crimson;
+        } */
         .logo img{
             margin-left: 0px;
         }
@@ -122,6 +126,107 @@
         .edit{
             height: 19vh;
         }
+        .premain h3{
+            color: rgb(77, 77, 77); 
+            text-align: right; 
+            font-size: 40px; 
+            position: absolute; 
+            right: 45px;
+            font-family:cursive;
+        }
+        #logooo sub{
+            color: white;
+            -webkit-text-stroke: black; 
+            font-size: 12px;
+        }
+        @media only screen and (max-width: 600px){
+            nav ul li{
+                margin: 5px;
+                padding: 0px;
+
+            }
+            nav ul li a{
+                font-size: 13px;
+                margin: 9px;
+                /* padding: 7px ; */
+
+            }
+            nav ul li img{
+                height: 60px;
+                width: 65px;
+                left: ;
+            }
+            nav{
+                height: 7vh;
+            }
+            #logooo{
+                font-size: 19px;
+                left: 45px;
+                top: 12px;
+            }
+            #logooo sub{
+                font-size: 7px;
+            }
+            .premain h3{
+                font-size: 16px;
+                margin-top: 92%;
+                color: rgb(0, 0, 0);
+                margin-right: 0px;
+                right: 7px;
+            }
+            .binay form{
+                width: 55%;
+                padding-right: 0px;
+                margin-right: 0px;
+                font-size: 15px;
+                position: absolute;
+                right: 5px;
+                top: 53%;
+                /* bottom: 0px; */
+                margin: 0px;
+                padding: 0;
+                height: fit-content;
+
+
+                /* top: -15px; */
+            }
+            .binay form input{
+                font-size: 13px;
+                margin: 7px;
+                /* padding: 7px ; */
+            }
+            .binay form  p{
+                font-size: 12px;
+                /* margin: auto; */
+            }
+            .binay form p a{
+                font-size: 12px;
+                /* padding: 5px ; */
+            }
+            #button a{
+                margin-left: 2px;
+            }
+            .fa{
+                font-size: 45px;
+                padding: 3px;
+                margin: 15px;
+                margin-top: 25px;
+            }
+            body{
+                background-color: rgb(0, 71, 71);
+            }
+            footer h3{
+                font-size: 17px;
+                position: absolute;
+                bottom: 0px;
+                right: 45px;
+            }
+            footer small{
+                position: absolute;
+                bottom: -19px;
+                right: 105px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -131,15 +236,15 @@
             <li><a href="sevice.html">Service</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="#" id="logooo">e-LIBRARY<sub style="color: white; -webkit-text-stroke: black; font-size: 12px;">Best e-web on internet</sub> </a></li>
+            <li><a href="#" id="logooo">e-LIBRARY<sub>Best e-web on internet</sub> </a></li>
             <li >
-                <img src="./images/logo2.jpg" style="border-radius: 50%;" height="60px" width="60px" center  alt="logo image did not load">
+                <img src="./images/large.png"  height="60px" width="85px" center  alt="logo image did not load">
             </li>
         </ul>   
     </nav>
 
     <div class="premain">
-        <h3 style="color: rgb(77, 77, 77); text-align: right; font-size: 40px; position: absolute; right: 45px;font-family:cursive;">To Visit e-BOOKS Universe</h3>
+        <h3>To Visit e-BOOKS Universe</h3>
     </div>
 
     <div class="binay">
@@ -154,8 +259,10 @@
                 <input type="password" name="password" id="password" placeholder="Enter Password"  required>
             </p>
             <p id="button">
-                <a href="#">SignIn</a>
-                <a href="#">Forget PassWord</a>
+                <a href="main.html">SignIn</a>
+                <!-- if userdetails match only then redirect into the sign in page i.e main.html  -->
+
+                <a href="forget.html">Forget PassWord</a>
             </p>
             <p>
                 -----------------OR---------------------
@@ -176,7 +283,7 @@
             <li><a href="#" class="fa fa-whatsapp" style="height: 45px; width: 45px; text-align: center;"></a></li>
             <li><a href="contact.php" class="fa fa-address-book" style="height: 45px; width: 45px; text-align: center;"></a></li>
             <li><a href="contact.php" class="fa fa-map-marker" style="height: 45px; width: 45px; text-align: center;"></a></li>
-            <li><a href="about.php" class="fa fa-info" style="height: 45px; width: 45px; text-align: center;"></a></li>
+            <li><a href="about.html" class="fa fa-info" style="height: 45px; width: 45px; text-align: center;"></a></li>
         </ul>
     </div>
     

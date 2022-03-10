@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/book8.jpg" type="image/x-icon">
+    <title>Enjoy here</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li, nav ul li select{
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 10px;
+        }
+        nav{
+            background-color:black;
+            height: 9vh;
+            transition: 1s;
+            position: -webkit-sticky;
+            width: 100%;
+        }
+        nav:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+        }
+        nav ul li a:hover{
+            color: aqua;
+        }
+        nav ul li a{
+            font-size: 23px;
+            color: rgb(255, 253, 253);
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: cursive;
+        }
+        input[type="search"], select option{
+            font-size: 19px;
+            color: rgb(0, 0, 0);
+            padding: 2px;
+            margin-top: 6px;
+            border-radius: 5px;
+            border: 2px solid purple;
+        }
+        .contain{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 35px;
+            /* border: 2px solid rgb(207, 39, 39); */
+            border-radius: 25px;
+            /* width: fit-content; */
+            text-align: center;
+            color: rgb(255, 255, 255);
+            /* background-image: url(./images/l1.jpg); */
+        }
+        .contain img{
+            border-radius: 65px;
+            border: 5px solid rgb(1, 255, 255);
+            object-fit: cover;
+            opacity: 0.8;
+            box-shadow: 2px 10px 15px rgb(16, 0, 46),5px -12px 45px rgb(0, 0, 0);
+        }
+        /* body{
+            background-color: rgb(32, 156, 156);
+            background: linear-gradient(rgba(13, 129, 120, 0.3)),url("./images/7.jpg");
+        } */
+        .contain img:hover{
+            cursor: pointer;
+            /* height: 455px; */
+            /* width: 455px; */
+            object-fit: cover;
+            opacity: 1;
+            /* width: fit-content; */
+            transition: 1s;
+            border: 5px solid rgb(39, 39, 39);
+            /* border-radius: 45px; */
+            box-shadow: 2px 5px 12px rgb(0, 0, 0),2px -5px -12px rgb(0, 0, 0);
+        }
+        #a1{
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgb(0, 204, 255);
+            border-radius: 9px;
+            padding: 10px;
+            font-size: 23px;
+            text-decoration: none;
+            color: black;
+            margin: 15px;
+            font-family: cursive;
+        }
+        #a1:hover{
+            border: 2px solid black;
+            color: rgb(73, 0, 0);
+            /* background-color: blueviolet; */
+        }
+        section{
+            border:2px solid rgb(0, 0, 0);
+            margin: 25px auto;
+            padding: 20px;
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            font-family: cursive;
+            background-color: rgb(0, 204, 255,.8);
+            border-radius: 17px;
+            margin-right: 25px;
+            /* text-decoration: underline; */
+        }
+        section span{
+            font-size: 19px;
+            font-family: cursive;
+            color: black;
+            text-decoration: none;
+            /* display: none; */
+            opacity: 0;
+            transition: 3s;
+        }
+        .contain:hover section span{
+            opacity: 1;
+            /* top: 10%; */
+            display: block;
+            animation-name: slide;
+            /* animation-duration: 2s; */
+            /* transition: 2s; */
+            text-decoration: none;
+            /* transition-delay: 0.1s ; */
+            /* -webkit-animation-direction: reverse; */
+        }
+        @keyframes slide{
+            0%{
+                color: transparent;
+
+            }
+            100%{
+                color: black;
+            }
+        }
+        /* .imggg{
+            border: 2px solid red;
+            transition: 0.5s;
+        } */
+        .preee{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 45px;
+            border: 2px solid purple;
+            border-radius: 35px;
+            box-shadow: 2px 5px 12px purple;
+            /* width: fit-content; */
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: rgb(57, 101, 121);
+        }
+        .header h3{
+            text-align: center; 
+            font-family: cursive; 
+            font-size: 27px; 
+            padding-top: 45px;
+            color: #003330; 
+            text-decoration: underline;
+        }
+        @media only screen and (max-width: 600px){
+            nav ul li{
+                margin: 2px;
+                padding: 2px;
+                /* display: none; */
+                /* opacity: 0; */
+            }
+            nav ul li a{
+                font-size: 10px;
+                /* margin: 2px ; */
+                /* display: none; */
+                padding: 0;
+            }
+            nav ul li input[type="search"] {
+                font-size: 10px;
+                width: fit-content;
+
+            }
+            nav{
+                height: 5vh;
+            }
+            .header h3{
+                font-size: 19px;
+                padding-top: 5px;
+
+            }
+            #a1{
+                font-size: 16px;
+                margin: 10px;
+                padding: 2px;
+                /* width: 100% ; */
+                /* margin-right: 10px ; */
+            }
+            #none{
+                display: none;
+            }
+            .contain .imggg a img{
+                height: 265px;
+                width: 200px;
+                border-radius: 23px;
+                position: relative;
+                top: -65px;
+                right: -57px;
+            }
+        .contain{
+            margin: 3px;
+            padding: 5px;
+        }
+        .contain section{
+            margin: 5px auto;
+            margin-left: 30px;
+            padding-top: 5px;
+            font-size: 13px;
+            /* margin-right: 20px; */
+            position: relative;
+            left: 45px;
+            height: fit-content;
+        }
+        /* .contain section span{
+            font-size: 13px;
+        } */
+        .preee{
+            margin: 5px;
+            /* padding: 30px; */
+        }
+        .apple{
+            position: relative;
+            top: 120px;
+            right: 115px;
+            font-size: 12;
+        }
+        .aaa{
+            display: none;
+        }
+        }
+        @media only screen and (min-width:600px){
+            .apple{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<!-- <script>
+    alert("Welcome To e-BOOK Universe 📖")
+</script> -->
+<body>
+    <div class="header">
+        <nav>
+            <ul type="none">
+                <a href="#" id="a1">Order Now 💰</a>
+                <li><a href="#">Novel</a></li>
+                <li><a href="#">Comic</a></li>
+                <li><a href="#" id="none">Study Material</a></li>
+                <!-- <li><a href="#"></a></li> -->
+                <li><input type="search" name="bookname" id="bookname" placeholder="Search Any Book Here"></li>
+                <li><a href="homee.php" style="color: rgb(0, 255, 213);" id="none">Welcome To e-BOOK Universe</a></li>
+            </ul>
+        </nav>
+        <h3>On The Top Of Trending Search </h3>
+        <hr style="color: aqua; font-weight: bold;">
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 1. Karnali Blues <br></em>
+                    Author: <span>Budhi Sagar</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/karnali.jpg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 2. Moonsoon <br></em>
+                    Author: <span>Subin Bhattrai</span> <br>
+                    Price: <span>1150/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/moonsoon.jpg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+            
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 3. Saya <br></em>
+                    Author: <span>Subin Bhattrai</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/saya.jpg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 4. FirFire <br></em>
+                    Author: <span>Buddhi Sagar</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/firfire.jpg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 5. Stranger In The Strange Land  <br></em>
+                    Author: <span>Suman Sharma</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/stranger.jpeg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 6. Priya Suphi <br></em>
+                    Author: <span>Subin Bhattarai</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/suphi.jpg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;">7. Judge List <br></em>
+                    Author: <span>Suman Sharma</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/judge.jpg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 8.Harry Potter <br></em>
+                    Author: <span>Suman Sharma</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/harry.jpeg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 9.Mistery<br></em>
+                    Author: <span>Suman Sharma</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/mistery.jpeg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 10. Lords of The Rings <br></em>
+                    Author: <span>Suman Sharma</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/lord.jpeg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 11.  <br></em>
+                    Author: <span>Suman Sharma</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/book3.jpg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 1. Think And Grow Rich <br></em>
+                    Author: <span>Suman Sharma</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/book3.jpg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+        </div>
+        <div class="preee">
+
+            <div class="contain">
+                <section> <em style="font-weight: bold; text-transform: uppercase; color: black; text-decoration: underline;"> 1. Think And Grow Rich <br></em>
+                    Author: <span>Suman Sharma</span> <br>
+                    Price: <span>750/-</span> <br> 
+                    About This Book: <span>This book is Basically About How to become independent and be the self selector of your own life</span>
+                </section>
+                <div class="imggg">
+                    <a href="#">
+                        <img src="./images/book3.jpg" height="450px" width="450px" alt="">
+                    </a>
+                </div>
+            </div> 
+            <p class="apple">
+
+                <a href="CV.txt"  id="a1">Download</a> OR 
+                <a href="#"  id="a1">AudioBook</a>
+            </p>
+            <a href="CV.txt" class="aaa" id="a1">Download</a> OR 
+            <a href="#" class="aaa" id="a1">AudioBook</a>
+        </div>
+        
+        
+    
+        
+</body>
+</html>

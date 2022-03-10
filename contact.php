@@ -116,6 +116,94 @@ input[type="button"]:hover{
     opacity: 0.8;
     cursor: pointer;
 }   */
+@media only screen and (max-width: 600px){
+    nav ul li{
+                margin: 5px;
+                padding: 0px;
+
+            }
+            nav ul li a{
+                font-size: 13px;
+                margin: 9px;
+                float: right;
+                clear: left;
+                margin-right: 20px;
+                /* padding: 7px ; */
+                margin-top: 17px;
+                color: rgb(255, 255, 255);
+                
+                text-transform:uppercase;
+
+
+            }
+            nav ul li img{
+                height: 50px;
+                width: 65px;
+            }
+            nav{
+                height: 6vh;
+                background-color: transparent;
+                transition: 1s;
+            }
+            nav:hover{
+                background-color: rgb(226, 34, 34)34);
+            }
+            #logooo{
+                font-size: 19px;
+                left: 45px;
+                top: 12px;
+                display: none;
+            }
+            #logooo sub{
+                font-size: 7px;
+            }
+            .main2 form{
+                width:60%;
+                position: relative;
+                /* right: ; */
+                /* margin: 12px; */
+
+            }
+            .main2 form h3{
+                font-size: 15px;
+
+            }
+            .main2 form p input,textarea {
+                /* width: 80%; */
+                font-size: 13px;
+                margin: 0;
+                padding: 0;
+                border-radius: 5px;
+                
+            }
+            textarea{
+                height:130px;
+                /* width: 25px; */
+                position: relative;
+                right: 15px;
+            }
+            .main1 ul li{
+                color: aqua;
+                margin: 7px;
+                font-size: 14px;
+                
+            }
+            body{
+        background: url("./images/7.jpg");
+    }
+}
+/* @media (min-aspect-ratio:16/9){
+    img{
+        width: 100%;
+        height: auto;
+    }
+} */
+/* @media (max-aspect-ratio:16/9){
+    img{
+        width: auto;
+        height: 100%;
+    }
+} */
 
     </style>
 </head>
@@ -128,7 +216,7 @@ input[type="button"]:hover{
             <li><a href="homee.php">Home</a></li>
             <li><a href="homee.php" id="logooo">e-LIBRARY<sub style="color: white; -webkit-text-stroke: black; font-size: 12px;">Best e-web on internet</sub> </a></li>
             <li >
-                <img src="./images/logo2.jpg" style="border-radius: 50%;" height="60px" width="60px" center  alt="logo image did not load">
+                <img src="./images/large.png"  height="60px" width="85px" center  alt="logo image did not load">
             </li>
         </ul>   
     </nav>

@@ -69,6 +69,22 @@
         input[type="submit"]:hover{
             opacity: 0.8;
         }
+        @media only screen and (max-width:600px){
+           form {
+                font-size: 10px;
+                width: 75%;
+                position: relative;
+                right: 30px;
+                /* margin: 10px ; */
+            }
+            input[type="text"],input[type="password"],input[type="email"],input[type="phone"],input[type="submit"]{
+                font-size: 13px;
+                width: 84%;
+            }
+            input[type="radio"]{
+                font-size: 13px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -110,6 +126,7 @@
             <br>
             <p>
                 <input type="submit" value="Submit Now">
+                <!-- using php redirect This to the main page i.e homee.php  -->
             </p>
         </form>
         <p style="text-align: center;">
